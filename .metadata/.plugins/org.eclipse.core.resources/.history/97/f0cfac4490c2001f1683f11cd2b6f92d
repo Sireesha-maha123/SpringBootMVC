@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Product Form</title>
+	</head>
+	<body>
+		<h1>Product Form</h1>
+		<form th:action="@{/product}" th:object="${productModel}" method="post">
+		<lable>Product Name:</lable>
+		<input type="text" id="name" name="name" th:value="*{name}"><br><br>
+		<label>Brand</label>
+	   <input type="text" id="brand" name="brand" th:value="*{brand}"><br><br>
+	   <label>MadeIn</label>
+		<input type="text" id="madeIn" name="madeIn" th:value="*{madeIn}"><br><br>
+			<label>Price</label>
+			<input type="number" id="price" name="price" th:value="*{price}"><br><br>
+		   <label> Quantity:</label>
+		    <input type="number"  id="Quantity"name="Quantity" th:value="*{Quantity}"><br><br>
+			<label> Discoount</label>
+					    <input type="number" id="discountrate" name="discountrate" th:value="*{discountrate}"><br><br>
+						<label> Tax</label>
+						<input type="number" id="taxrate" name="taxrate" th:value="*{taxrate}"><br><br>
+											
+
+						
+						
+			<button type="submit">Save Product</button>
+			<button type="reset">Reset</button>
+						
+			
+				</form>
+				</body>
+			</html>

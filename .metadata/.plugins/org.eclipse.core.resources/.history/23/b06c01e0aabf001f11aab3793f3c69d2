@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>Employee List</title>
+	</head>
+	<body>
+		<div>
+			<h2>Product List</h2>
+			<table border="2"></table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Dept</th>
+					<th>salary</th>
+					<th>Id</th>
+					<th>location</th>
+					<th>gender</th>
+					<th>Hra</th>
+					<th>Da</th>
+					<th>Finalsalary</th>
+					dept;
+						   private double salary;
+						   private char gender;
+						   private String location;
+						   private double hra;
+						   private double da;
+						   private double finalsalary;
+					
+				</tr>
+			</thead>
+		</div>
+	</body>
+</html>

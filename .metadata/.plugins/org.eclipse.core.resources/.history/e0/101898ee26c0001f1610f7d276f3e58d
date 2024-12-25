@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>Search</title>
+	</head>
+	<body>
+		<h2>Search for a Employee</h2>
+		<form th:action="@{/searchbyid}" method="post">
+			<label for="id">Enter ID:</label>
+			<input type="number" name="id" id="id"required>
+			<button type="submit">Search</button>
+		</form>
+			<div th:if="${employee!=null}">
+				<h3>Employee Details</h3>
+				<p><strong>ID:</strong><span th:text="${employee.id}"></span></p>
+				<p><strong>Name:</strong><span th:text="${employee.name}"></span></p>
+				<p><strong>DEpt:</strong><span th:text="${employee.brand}"></span></p>
+				<p><strong>Salary:</strong><span th:text="${employee.madeIn}"></span></p>
+				<p><strong>Gender:</strong><span th:text="${employee.price}"></span></p>
+				<p><strong>Location:</strong><span th:text="${employee.Quantity}"></span></p>
+				<p><strong>HRA:</strong><span th:text="${employee.discountrate}"></span></p>
+				<p><strong>DA:</strong><span th:text="${product.taxRate}"></span></p>
+				<p><strong>discountPrice:</strong><span th:text="${product.discountPrice}"></span></p>
+				<p><strong>offerprice:</strong><span th:text="${product.offerPrice}"></span></p>
+				<p><strong>finalprice:</strong><span th:text="${product.finalPrice}"></span></p>
+				<p><strong>stockValue:</strong><span th:text="${product.stockValue}"></span></p>
+			</div>
+			<div th:if="${product==null}">
+				<p>No Product found with ID</p>
+			</div>
+	</body>
+</html>

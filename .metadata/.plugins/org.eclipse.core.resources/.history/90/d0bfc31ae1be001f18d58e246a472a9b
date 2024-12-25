@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<title>Search</title>
+	</head>
+	<body>
+		<h2>Search for a Product</h2>
+		<form action="@{/searchbyid}" method="post">
+			<label for="id">Enter ID:</label>
+			<input type="number" name="id" id="id"required>
+			<button type="submit">Search</button>
+		</form>
+		<---this code ava>
+			<div th:if="${product!=null}">
+				<h3>Product Details</h3>
+				<p><strong>ID:</strong><span th:text="${product.id}"></span></p>
+			</div>
+	</body>
+</html>

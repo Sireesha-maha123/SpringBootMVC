@@ -1,0 +1,42 @@
+package com.Sathya.springboot.controller;
+
+import java.util.List;
+
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+
+import com.Sathya.springboot.entity.EmployeeEntity;
+import com.Sathya.springboot.service.EmployeeService;
+
+
+@Controller
+public class Employee 
+{ 
+	@Autowired
+	EmployeeService employeeService;
+	@GetMapping("/getallemp")
+	 public String getAllemployee(Model model)
+	  {
+		  List<EmployeeEntity> employees=employeeService.getAllEmployees();
+		  model.addAttribute("employee",employee);
+		  return "employee-list";
+		  
+	  }
+	@GetMapping("/employeefrom")
+	public String greet()
+	{
+		return "employee";
+	}
+  @PostMapping("/employee")
+  public String save(Employee employee)
+  {
+	  System.out.println(employee);
+	  return "suceessEmp";
+  }
+  
+}
+

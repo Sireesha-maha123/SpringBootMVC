@@ -1,0 +1,38 @@
+<bodyhtml>
+	<head>
+		<title>Employee List</title>
+	</head>
+	<div>
+			<h2>Product List</h2>
+			<table border="2"></table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Dept</th>
+					<th>salary</th>
+					<th>Id</th>
+					<th>location</th>
+					<th>gender</th>
+					<th>Hra</th>
+					<th>Da</th>
+					<th>Finalsalary</th>
+			</thead>
+			<tbody>
+				<tr th:each="employee:${employees}">
+					<td th:text="${employee.id}"></td>
+					<td th:text="${employee.name}"></td>
+					<td th:text="${employee.dept}"></td>
+					<td th:text="${employee.id}"></td>
+					<td th:text="${employee.gender}"></td>
+					<td th:text="${employee.location}"></td>
+					<td th:text="${employee.hra}"></td>
+					<td th:text="${employee.da}"></td>
+					<td th:text="${employee.finalsalary}"></td>
+					
+				</tr>
+			</tbody>
+			</table>
+			</div>
+			</body>
+			</html>
+	

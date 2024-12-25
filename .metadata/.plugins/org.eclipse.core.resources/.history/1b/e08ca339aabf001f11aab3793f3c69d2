@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>Employee List</title>
+	</head>
+	<body>
+		<div>
+			<h2>Product List</h2>
+			<table border="2"></table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					
+					
+				</tr>
+			</thead>
+		</div>
+	</body>
+</html>

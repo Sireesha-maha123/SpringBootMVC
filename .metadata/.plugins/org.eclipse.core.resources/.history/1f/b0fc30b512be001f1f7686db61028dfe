@@ -1,0 +1,11 @@
+package com.Sathya.springboot.entity;
+
+public class EmployeeEntity 
+{
+	   private String name;
+	   private String dept;
+	   private double salary;
+	   private char gender;
+	   private String location;
+	   
+}

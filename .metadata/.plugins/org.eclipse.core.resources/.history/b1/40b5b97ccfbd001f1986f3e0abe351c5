@@ -1,0 +1,5 @@
+package com.Sathya.springboot.repositry;
+
+public interface ProductRepository {
+
+}

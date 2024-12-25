@@ -1,0 +1,5 @@
+package com.Sathya.springboot.entity;
+
+public class ProductEntity {
+
+}
